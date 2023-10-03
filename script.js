@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Enviar selectedIngredients al backend a través de una solicitud HTTP (POST)
         // Puedes utilizar la función fetch para esto.
         // Luego, muestra la receta sugerida en la interfaz de usuario.
-        fetch('http://127.0.0.1:5000/recipe', {
+        fetch('https://backend-multiplex-service.onrender.com//recipe', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
