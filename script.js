@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
         console.log(selectedIngredientsArray);
-        // Enviar selectedIngredients al backend a través de una solicitud HTTP (POST)
-        // Puedes utilizar la función fetch para esto.
+        const recipelabel = document.getElementById("recipeDisplay");
+        recipelabel.innerHTML = "Se esta generando la receta, por favor espere...";
         // Luego, muestra la receta sugerida en la interfaz de usuario.
         fetch('https://backend-multiplex-service.onrender.com//recipe', {
             method: 'POST',

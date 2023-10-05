@@ -7,37 +7,44 @@
     <title>Selector de Ingredientes</title>
 </head>
 <body>
-    <h1>Selector de Ingredientes</h1>
+    <div id="Container">
+        <header id="title">Tu Recet<span>IA</span>rio</header>
+        <div id="Container2">
+            <div id="ContainerSeleccion">
+                <div id="ingredientSelection">
+                    <!-- Lista desplegable de categorías -->
+                    <select id="categorySelect">
+                        <option value="default">[Elige una categoría]</option>
+                        <option value="frutas">Frutas</option>
+                        <option value="vegetales">Vegetales</option>
+                        <option value="frutos-secos">Frutos Secos</option>
+                        <option value="pan-y-cereales">Pan y cereales</option>
+                        <option value="lacteos">Lácteos</option>
+                        <option value="carnes-y-proteicos">Carnes y proteicos</option>
+                        <option value="grasas">Grasas</option>
+                        <option value="condimentos-y-saborizantes">Condimentos y saborizantes</option>
+                    </select>
+                    <!-- Lista de ingredientes dentro de la categoría seleccionada -->
+                    <button id="submitIngredients">Obtener Receta</button>
+                </div>
     
-    <div id="ingredientSelection">
-        <!-- Lista desplegable de categorías -->
-        <select id="categorySelect">
-            <option value="default">[Elige una categoría]</option>
-            <option value="frutas">Frutas</option>
-            <option value="vegetales">Vegetales</option>
-            <option value="frutos-secos">Frutos Secos</option>
-            <option value="pan-y-cereales">Pan y cereales</option>
-            <option value="lacteos">Lácteos</option>
-            <option value="carnes-y-proteicos">Carnes y proteicos</option>
-            <option value="grasas">Grasas</option>
-            <option value="condimentos-y-saborizantes">Condimentos y saborizantes</option>
-        </select>
-        <!-- Lista de ingredientes dentro de la categoría seleccionada -->
-    </div>
-    <div id="ingredientsList">
-        <!-- Esta parte se llenará dinámicamente con ingredientes -->
-    </div>
-    <div>
-        <h2>Ingredientes seleccionados</h2>
-        <ul id="selectedIngredients">
-        </ul>
-    </div>
+                <div id="ingredientsList">
+                    <!-- Esta parte se llenará dinámicamente con ingredientes -->
+                </div>
+                <div>
+                    <h2>Ingredientes seleccionados</h2>
+                    <ul id="selectedIngredients">
+                    </ul>
+                </div>
+            </div>
+            <div id="recipeDisplay">
+                <!-- Esta parte se llenará dinámicamente con la receta -->
+            </div>
+        </div>     
 
-    <button id="submitIngredients">Obtener Receta</button>
-
-    <div id="recipeDisplay">
-        <!-- Aquí se mostrará la receta sugerida -->
+        
     </div>
+    
 
     <script src="script.js"></script>
 </body>

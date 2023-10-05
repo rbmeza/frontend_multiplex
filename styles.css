@@ -1,74 +1,91 @@
-/* Estilos para los checkboxes */
+body {
+    background-color: lightgrey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#Container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    float: left;
+}
+#ContainerSeleccion {
+    width: 40%;
+    float: left;
+}
+#Container2 {
+    width: 100%;
+}
 label {
     display: block;
     margin-bottom: 10px;
     position: relative;
-    padding-left: 30px;
+    padding-left: 10px;
     cursor: pointer;
     font-size: 16px;
 }
-
-input[type="checkbox"] {
-    cursor: pointer;
+header {
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: black;
+}
+span {
+    font-weight: bolder;
 }
 
-/* Estilos para el indicador de checkbox personalizado */
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    background-color: #fc6108;
-    border: 2px solid #fc6108;
-    border-radius: 4px;
-    transition: background-color 0.2s, border-color 0.2s;
+#ingredientSelection {
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: medium;
 }
 
-/* Establece el estilo del indicador cuando el checkbox está marcado */
-input[type="checkbox"]:checked + .checkmark::before {
-    content: "\2713"; /* Unicode para el símbolo de verificación ✓ */
+#ingredientsList {
+    height: 300px;
+    width: 40%;
+    margin-top: 10px;
+    margin-left: 250px;
+    overflow-y: auto;
+    border:2px solid black;
+}
+
+input[type=checkbox] + .checkmark {
+    margin-left: 10px;
+    float: inline-start;
     display: block;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #fc6108; /* Color cuando el checkbox está marcado */
 }
 
-/* Cambia el color de fondo del indicador cuando el checkbox está marcado */
-input[type="checkbox"]:checked + .checkmark {
-    background-color: #fc6108; /* Cambia el color de fondo cuando el checkbox está marcado */
-    border-color: #fc6108; /* Cambia el color del borde cuando el checkbox está marcado */
-}
-
-/* Estilos cuando el mouse está sobre el label */
-label:hover {
-    background-color: #fc6108;
-}
-
-/* Estilos para la lista de ingredientes */
-#ingredientsList {
-    max-height: 200px;
-    max-width: 600px;
-    margin-top: 50px;
-    overflow-y: auto; /* Agrega una barra de desplazamiento vertical si es necesario */
-    background-color: rgb(15, 233, 8);
-}
-
-#selectedIngredients {
-    max-height: 200px; 
-    margin-left: 0px;
-    display: inline-block; 
-    overflow-y: auto; /* Agrega una barra de desplazamiento vertical si es necesario */
-    background-color: rgb(247, 5, 214);
-}
-
-/* Personaliza los estilos para el select y el botón según sea necesario */
-#categorySelect {
-    /* Estilos para el select */
+input[type=checkbox] {
+    cursor: pointer;
 }
 
 #submitIngredients {
-    /* Estilos para el botón */
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: medium;
+    position: absolute;
+    top: 20%;
+    left: 2.5%;
+}
+
+h2 {
+    margin-left: 10px;
+}
+
+#recipeDisplay {
+    height: 100%;
+    width: 59%;
+    float: right;
+}
+#selectedIngredients {
+    height: 150px;
+    width: 30%;
+    margin-top: 10px;
+    margin-left: 10px;
+    overflow-y: auto;
+    border:2px solid black;
 }
